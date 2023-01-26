@@ -11,7 +11,7 @@ public class Program
             Console.WriteLine("Enter  Passowrd :");
             var data = Console.ReadLine();
 
-        string pattern = "^[A-z]{8}";
+        string pattern = "^[A-Z]{1}[A-z]{7}";
             Regex regex = new Regex(pattern);
 
             if(regex.IsMatch(data))
