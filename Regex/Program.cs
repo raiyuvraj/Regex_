@@ -8,7 +8,7 @@ public class Program
 {
     static void Main(string[] args)
      {
-            Console.WriteLine("Enter  First Name");
+            Console.WriteLine("Enter  Last Name");
             var data = Console.ReadLine();
 
             string pattern = "^[A-Z]{1}[a-z]{2,}$";
@@ -17,7 +17,7 @@ public class Program
 
             if(regex.IsMatch(data))
         {
-            Console.WriteLine("Is valid First Name");
+            Console.WriteLine("Is valid Last Name");
         }
             else
         {
