@@ -8,15 +8,15 @@ public class Program
 {
     static void Main(string[] args)
      {
-            Console.WriteLine("Enter  Passowrd :");
+            Console.WriteLine("Enter  Email Id. :");
             var data = Console.ReadLine();
 
-        string pattern = "^(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$";
+        string pattern = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$";
             Regex regex = new Regex(pattern);
 
             if(regex.IsMatch(data))
         {
-            Console.WriteLine("Is valid Password");
+            Console.WriteLine("Is valid Email Id.");
         }
             else
         {
